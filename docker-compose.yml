@@ -1,0 +1,9 @@
+api:
+  image: 'phantom_node'
+  ports:
+    - '4446:4446'
+  volumes:
+    - '.:/home/data'
+    - '/var/www/html:/var/www/html'
+  restart: always
+  entrypoint: /home/data/program.sh
